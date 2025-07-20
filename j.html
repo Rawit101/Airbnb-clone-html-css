@@ -1,34 +1,56 @@
 <style>
-    .header {
-        display: grid;
-        grid-template-columns: 1fr auto 1fr;
-        align-items: center;
-    }
-
-    .center-menu {
+    .product-container {
         display: flex;
+        flex-wrap: wrap;
+        /* ให้ขึ้นบรรทัดใหม่เมื่อเต็ม */
         justify-content: center;
-        gap: 1rem;
+        /* จัดให้อยู่ตรงกลาง */
+        gap: 30px;
+        /* ระยะห่างแต่ละอัน */
     }
 
-    .right-menu {
-        justify-self: end;
+    .product {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* จัดให้ข้อความอยู่ตรงกลางของกล่อง */
+    }
+
+    .product-image {
+        width: 150px;
+        height: 150px;
+        background-color: red;
+        border-radius: 12px;
+        color: black;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 5px;
+    }
+
+    .product-info {
+        text-align: center;
     }
 </style>
 
-<div class="header">
-    <div class="left-menu">
-        <img src="logo.png" height="40">
+<div class="product-container">
+    <div class="product">
+        <div class="product-image">sadsa</div>
+        <div class="product-info">
+            <h3>Product Title</h3>
+            <p>Product</p>
+            <p>$99.99</p>
+        </div>
     </div>
 
-    <nav class="center-menu">
-        <a href="#">🏠 Home</a>
-        <a href="#">🎈 Experiences</a>
-        <a href="#">🛎️ Services</a>
-    </nav>
-
-    <div class="right-menu">
-        <a href="#">Become a host</a>
-        🌐 ☰
+    <div class="product">
+        <div class="product-image">sadsa</div>
+        <div class="product-info">
+            <h3>Product Title</h3>
+            <p>Product</p>
+            <p>$99.99</p>
+        </div>
     </div>
+
+    <!-- เพิ่มได้ไม่จำกัด -->
 </div>

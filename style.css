@@ -1,5 +1,6 @@
 @import url('https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css');
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-straight/css/uicons-regular-straight.css');
 
 
 .lexend-deca {
@@ -72,4 +73,101 @@ body {
     text-decoration: none;
     color: #000000;
     font-weight: 500;
+}
+
+.second-navbar {
+    margin: auto;
+    width: 50%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    background-color: #ffffff;
+    border-radius: 40px;
+    border: 1px solid rgb(193, 193, 193);
+    margin-top: 10px;
+}
+
+.btn-nav {
+    width: 105px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 20px;
+    border: none;
+    margin: 0 35px;
+    background-color: rgb(255, 255, 255);
+    font-family: "Lexend Deca", sans-serif;
+}
+
+.description {
+    color: #888888;
+}
+
+.btn-nav:hover {
+    background-color: #e0e0e0;
+    transition: background-color 0.3s ease;
+}
+
+.btn-srch {
+    width: 50px;
+    height: 48px;
+    background-color: rgb(255, 56, 56);
+    color: wheat;
+    border-radius: 50px;
+    border: none;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.btn-srch:hover {
+    background-color: #ff0000;
+    transition: background-color 0.3s ease;
+}
+
+.container {
+    display: flex;
+    padding-top: 50px;
+    justify-content: space-between;
+    margin: 10px 80px;
+}
+
+.section {
+    font-size: 25px;
+}
+
+.skip {
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    height: 22px;
+    width: 22px;
+    border-radius: 50%;
+    background-color: #d4d4d4
+}
+
+.skip:hover {
+    background-color: #b0b0b0;
+    transition: background-color 0.3s ease;
+}
+
+.product-list {
+    flex-wrap: wrap;
+    display: flex;
+    gap: 15px;
+    padding: 20px;
+    margin-left: 60px;
+}
+
+.product-card {
+    position: relative;
+    width: 180px;
+    height: 200px;
+    background-color: #ff0000;
+    border-radius: 10px;
+    display: flex;
+}
+
+.product-info {
+    text-align: center;
 }
