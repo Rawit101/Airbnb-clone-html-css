@@ -151,23 +151,42 @@ body {
     transition: background-color 0.3s ease;
 }
 
-.product-list {
-    flex-wrap: wrap;
+.product-container {
     display: flex;
-    gap: 15px;
-    padding: 20px;
-    margin-left: 60px;
+    flex-wrap: wrap;
+    /* ให้ขึ้นบรรทัดใหม่เมื่อเต็ม */
+    justify-content: center;
+    /* จัดให้อยู่ตรงกลาง */
+    gap: 30px;
+    /* ระยะห่างแต่ละอัน */
 }
 
-.product-card {
-    position: relative;
-    width: 180px;
-    height: 200px;
-    background-color: #ff0000;
-    border-radius: 10px;
+.product {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* จัดให้ข้อความอยู่ตรงกลางของกล่อง */
+}
+
+.product-image {
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    border-radius: 12px;
+    color: black;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 5px;
 }
 
 .product-info {
     text-align: center;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* ทำให้รูปภาพเต็มพื้นที่โดยไม่บิดเบือน */
 }
