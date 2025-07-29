@@ -166,6 +166,10 @@ body {
     border-radius: 12px;
 }
 
+.card-info {
+    font-size: 14px;
+}
+
 .badge {
     position: absolute;
     padding: 5px 5px;
